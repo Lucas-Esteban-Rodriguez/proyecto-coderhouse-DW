@@ -5,15 +5,32 @@
 }
                                     /*Cosas generales*/
 .footer {
-    background-color: violet;
     position: relative;
+    background-color: aquamarine;
 }
+.contenedor-titulo {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}       
+                              /*Index*/
 .boton-cuenta {
     padding: 8px;
-    border-style: none;
+    border-width: 2px;
+    border: solid;
     background-color: white;
+    cursor: pointer;
+    border-color: orange;
 }
-                                    /*Index*/
+.boton-cuenta:hover {
+    background-color: orange;
+}
 .buscador {
     height: 30px;
 }
@@ -40,7 +57,7 @@
 .contenedor-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -72,11 +89,9 @@
 }
 .boton-lista {
     padding: 10px;
-    background-color: #bfdbf7;
     border-style: solid;
     border-width: 2px;
-    border-color: transparent;
-    transition: 0.4s;
+    border-color: #4ecdc4;
 }
 .boton-cuenta-responsive {
     display: none;
@@ -91,15 +106,6 @@
 }
 .imagen-descuento {
     width: 100%;
-}
-.contenedor-titulo {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: tomato;
 }
 .section-cartas {
     width: 100%;
@@ -121,8 +127,11 @@
     border-radius: 20px 0 20px 0;
     box-shadow: 0px 10px 15px 0px black;
     cursor: pointer;
+    transition: 0.4s;
 }
-
+.carta:hover {
+    transform: scale(110%);
+}
 .contenido-carta {
     width: 100%;
     height: 100%;
@@ -136,7 +145,6 @@
 .contenedor-footer1 {
     width: 100%;
     height: 190px;
-    background-color: tomato;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
