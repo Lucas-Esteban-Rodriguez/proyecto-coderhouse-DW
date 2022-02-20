@@ -7,7 +7,7 @@
 .card {
     margin-top: 50px;
     width: 240px;
-    height: 314px;
+    height: 360px;
     background: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
     cursor: pointer;
@@ -15,9 +15,10 @@
 }
 body {
     background-color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .bg-gris {
-    background-color: #6c757d;
+    background-color: #52b788;
 }
 .width-100 {
     width: 100%;
@@ -27,24 +28,40 @@ body {
 }
 .logo {
     width: 70px;
+    transform: scale(140%);
+    transition: 0.4s;
+}
+.logo:hover {
+    transform: scale(100%);
 }
 .carrito {
     height: 35px;
     width: 30px;
+    transition: 0.4s;
+}
+.carrito:hover {
+    transform: scale(140%);
 }
 .buscador {
     margin-right: 150px;
+}
+.nav-boton:hover {
+    border-bottom: solid 1px black;
+}
+.boton-activo {
+    border-bottom: solid 2px gold;
 }
 .contenedor-titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }  
 .titulo {
     font-size: 2.5rem;
+    font-weight: 900;
 }
 .card:hover {
     transform: scale(110%);
@@ -92,8 +109,105 @@ body {
 .email {
     width: 455px;
 }
-
-
+.lista-categorias {
+    padding: 10px;
+    transition: 0.4s;
+}
+.lista-categorias:hover {
+    padding: 20px;
+}
+.span-categorias {
+    padding: 5px;
+    background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(224,170,255,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+.padding1 {
+    padding: 5px 50px;
+}
+.padding2 {
+    padding: 5px 53px;
+}
+.padding3 {
+    padding: 5px 32px;
+}
+.padding4 {
+    padding: 5px 40px;
+}
+.padding6 {
+    padding: 5px 16px;
+}
+.padding5 {
+    padding: 5px 36px;
+}
+.padding7 {
+    padding: 5px 49px;
+}
+.section-carrito {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.contenedor-carrito {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cssbuttons-io-button {
+    background: #4ecdc4;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #4ecdc4;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+   }
+   
+   .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #4ecdc4;
+    right: 0.3em;
+    transition: all 0.3s;
+   }
+   
+   .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+   }
+   
+   .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #4ecdc4;
+   }
+   
+   .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+   }
+   
+   .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+   }   
 @media screen and (max-width: 1024px) {
     .boton-cuenta {
         width: 20px;
@@ -307,10 +421,7 @@ body {
        height: 150px;
    }
                                     /*Carrito*/
-.body-carrito {
-    display: grid;
-    grid-template-rows: 140px 550px 250px;
-}
+
 
 /*-----------------------------------------Media Queries-------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
