@@ -1,0 +1,21 @@
+header{
+    .header-logo {
+        width: 70px;
+        transform: scale(140%);
+        transition: 0.4s;
+    &:hover {
+        transform: scale(100%);
+        }
+    }
+    .header-buscador {
+        margin-right: 150px;
+    }
+    .header-carrito {
+        height: 35px;
+        width: 30px;
+        transition: 0.4s;
+    &:hover {
+        transform: scale(140%);
+        }
+    }
+}

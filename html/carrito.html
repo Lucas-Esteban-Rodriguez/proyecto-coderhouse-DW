@@ -27,13 +27,13 @@
   <header class="py-3 border-bottom bg-gris width-100">
     <div class="container d-flex flex-wrap justify-content-center width-100">
       <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none">
-        <img class="logo" src="../img/Mate-blanco-y-negro.jpg" alt="LOGO">
+        <img class="header-logo" src="../img/Mate-blanco-y-negro.jpg" alt="LOGO">
       </a>
-      <form class="col-12 col-lg-4 mb-3 mb-lg-0 mt-lg-2 buscador">
+      <form class="col-12 col-lg-4 mb-3 mb-lg-0 mt-lg-2 header-buscador">
         <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
       </form>
       <a class="navbar-brand mt-lg-1" href="carrito.html">
-        <img class="carrito" src="../img/carro-de-la-carretilla.png" alt="Carrito de compras">
+        <img class="header-carrito" src="../img/carro-de-la-carretilla.png" alt="Carrito de compras">
       </a>
       <ul class="nav ms-lg-5 mt-lg-2">
         <li class="nav-item"><a href="#" class="nav-link link-light px-2 nav-boton">Login</a></li>
@@ -64,15 +64,9 @@
       </div>
     </div>
   </nav>
-  <section class="section-carrito">
-      <div class="contenedor-carrito">
-          <h1>No hay articulos en el carrito</h1>
-          <button class="cssbuttons-io-button"> Volver al incio
-            <div class="icon">
-              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-            </div>
-          </button>
-      </div>
+  <section class="container-fluid d-flex flex-column align-items-center section-carrito justify-content-center">
+    <h1>No hay articulos en el carrito</h1>
+    <a href="./index.html" class="btn btn-outline-success">Volver al inicio</a>
   </section>
   <div class="mt-5">
     <footer class="py-5 bd-footer bg-light width-100">
@@ -97,7 +91,7 @@
             <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="carrito.html">Carrito</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 offset-lg-1">
+        <div class="col-lg-4 offset-lg-1 ms-3 ms-lg-0">
           <form>
             <h5>Suscribete para recibir novedades</h5>
             <p>Ofertas, novedades y mas!</p>

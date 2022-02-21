@@ -27,13 +27,13 @@
   <header class="py-3 border-bottom bg-gris width-100">
     <div class="container d-flex flex-wrap justify-content-center width-100">
       <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none">
-        <img class="logo" src="../img/Mate-blanco-y-negro.jpg" alt="LOGO">
+        <img class="header-logo" src="../img/Mate-blanco-y-negro.jpg" alt="LOGO">
       </a>
-      <form class="col-12 col-lg-4 mb-3 mb-lg-0 mt-lg-2 buscador">
+      <form class="col-12 col-lg-4 mb-3 mb-lg-0 mt-lg-2 header-buscador">
         <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
       </form>
       <a class="navbar-brand mt-lg-1" href="carrito.html">
-        <img class="carrito" src="../img/carro-de-la-carretilla.png" alt="Carrito de compras">
+        <img class="header-carrito" src="../img/carro-de-la-carretilla.png" alt="Carrito de compras">
       </a>
       <ul class="nav ms-lg-5 mt-lg-2">
         <li class="nav-item"><a href="#" class="nav-link link-light px-2 nav-boton">Login</a></li>
@@ -65,17 +65,19 @@
     </div>
   </nav>
   <section class="section-formulario">
-    <div class="carta-formulario">
-      <form class="contenedor-formulario">
-        <label>
+    <div class="section-formulario-carta">
+      <form class="section-formulario-carta-contenedor">
+        <label for="nombre" class="contenedor-nombre-y-apellido">
           Nombre:
-          <input required class="formulario-nombre" type="text" placeholder="Ej: Juan Gabriel">
+          <input required name="nombre" type="text" placeholder="Ej: Juan Gabriel">
+          <label for="apellido">
           Apellido:
-          <input required class="formulario-apellido" type="text" placeholder="Ej: Pérez">
+          <input required name="apellido" type="text" placeholder="Ej: Pérez">
+        </label>
         </label>
         <div>
           Motivo:
-          <select class="formulario-motivo" required>
+          <select class="section-formulario-carta-contenedor-formulario-motivo" required>
             <option value="" disabled selected>Elige una opción</option>
             <option value="">Una compra</option>
             <option value="">Medios de pago</option>
@@ -83,12 +85,12 @@
             <option value="">Otro...</option>
           </select>
         </div>
-        <div>
+        <div class="section-formulario-carta-contenedor-email">
           Email:
-          <input class="email" type="email" required placeholder="Example123@Mates.com">
+          <input class="contenedor-email-email" type="email" required placeholder="Example123@Mates.com">
         </div>
-        <div>
-          <input class="consulta" type="text" required placeholder="Escriba aqui...">
+        <div class="contenedor-consulta">
+          <input class="section-formulario-carta-contenedor-consulta" type="text" required placeholder="Escriba aqui...">
         </div>
         <label>
           <input type="checkbox"> Recibir novedades y ofertas
@@ -123,7 +125,7 @@
             <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="carrito.html">Carrito</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 offset-lg-1">
+        <div class="col-lg-4 offset-lg-1 ms-3 ms-lg-0">
           <form>
             <h5>Suscribete para recibir novedades</h5>
             <p>Ofertas, novedades y mas!</p>

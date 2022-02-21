@@ -1,9 +1,9 @@
+/*-----------------------------------------------General-----------------------------------------------------*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-/*------------------------------Bootstrap-----------------------------------*/
 .card {
     margin-top: 50px;
     width: 240px;
@@ -12,6 +12,27 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
     cursor: pointer;
     transition: 0.4s;
+}
+.card:hover {
+    transform: scale(110%);
+}
+.contenedor-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}  
+.nav-boton:hover {
+    border-bottom: solid 1px black;
+}
+.boton-activo {
+    border-bottom: solid 2px gold;
+}
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 body {
     background-color: #fff;
@@ -26,49 +47,27 @@ body {
 .width-50 {
     width: 50%;
 }
-.logo {
+/*-------------------------------------------Index--------------------------------------------------------*/
+.header-logo {
     width: 70px;
     transform: scale(140%);
     transition: 0.4s;
 }
-.logo:hover {
+.header-logo:hover {
     transform: scale(100%);
 }
-.carrito {
+.header-carrito {
     height: 35px;
     width: 30px;
     transition: 0.4s;
 }
-.carrito:hover {
+.header-carrito:hover {
     transform: scale(140%);
 }
-.buscador {
+.header-buscador {
     margin-right: 150px;
 }
-.nav-boton:hover {
-    border-bottom: solid 1px black;
-}
-.boton-activo {
-    border-bottom: solid 2px gold;
-}
-.contenedor-titulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-}  
-.titulo {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
-.card:hover {
-    transform: scale(110%);
-}
-.flex-w {
-    flex-wrap: wrap;
-}
+/*-------------------------------------------------Nosotros--------------------------------------------*/
 .contenedor-cartas-nosotros {
     display:flex;
     justify-content: space-evenly;
@@ -100,15 +99,13 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.titulo-nosotros {
+.carta-nosotros-contenedor-titulo {
     border-bottom: solid 2px;
 }
-.parrafo {
+.carta-nosotros-contenedor-parrafo {
     margin: 20px 50px;
 }
-.email {
-    width: 455px;
-}
+/*-----------------------------------------Categorias----------------------------------------*/
 .lista-categorias {
     padding: 10px;
     transition: 0.4s;
@@ -122,100 +119,88 @@ body {
     linear-gradient(127deg, rgba(224,170,255,.8), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
-.padding1 {
+.span-padding1 {
     padding: 5px 50px;
 }
-.padding2 {
+.span-padding2 {
     padding: 5px 53px;
 }
-.padding3 {
+.span-padding3 {
     padding: 5px 32px;
 }
-.padding4 {
+.span-padding4 {
     padding: 5px 40px;
 }
-.padding6 {
+.span-padding6 {
     padding: 5px 16px;
 }
-.padding5 {
+.span-padding5 {
     padding: 5px 36px;
 }
-.padding7 {
+.span-padding7 {
     padding: 5px 49px;
 }
+/*------------------------------------------------Carrito----------------------------------------*/
 .section-carrito {
     width: 100%;
-    height: 500px;
-    display: flex;
+    height: 600px;
 }
-.contenedor-carrito {
+/*-------------------------------------------------Contacto-------------------------------*/
+.contenedor-email-email {
+    width: 67%;
+}
+.section-formulario-carta-contenedor-email {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-.cssbuttons-io-button {
-    background: #4ecdc4;
-    color: white;
-    font-family: inherit;
-    padding: 0.35em;
-    padding-left: 1.2em;
-    font-size: 17px;
-    font-weight: 500;
-    border-radius: 0.9em;
-    border: none;
-    letter-spacing: 0.05em;
+.contenedor-nombre-y-apellido {
+    width: 100%;
     display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #4ecdc4;
-    overflow: hidden;
-    position: relative;
-    height: 2.8em;
-    padding-right: 3.3em;
-   }
-   
-   .cssbuttons-io-button .icon {
-    background: white;
-    margin-left: 1em;
-    position: absolute;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #4ecdc4;
-    right: 0.3em;
-    transition: all 0.3s;
-   }
-   
-   .cssbuttons-io-button:hover .icon {
-    width: calc(100% - 0.6em);
-   }
-   
-   .cssbuttons-io-button .icon svg {
-    width: 1.1em;
-    transition: transform 0.3s;
-    color: #4ecdc4;
-   }
-   
-   .cssbuttons-io-button:hover .icon svg {
-    transform: translateX(0.1em);
-   }
-   
-   .cssbuttons-io-button:active .icon {
-    transform: scale(0.95);
-   }   
+    flex-wrap: wrap;
+}
+.contenedor-consulta {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+.section-formulario {
+ width: 100%;
+ height: 1000px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.section-formulario-carta-contenedor {
+ background-color: gold;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ width: 85%;
+ height: 500px;
+}
+.section-formulario-carta {
+width: 800px;
+height: 600px;
+background: rgb(236, 236, 236);
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+margin-left: 75px;
+margin-right: 75px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.section-formulario-carta-contenedor-consulta {
+ width: 73%;
+ height: 150px;
+}   
+   /*------------------------------------------*/
 @media screen and (max-width: 1024px) {
-    .boton-cuenta {
-        width: 20px;
-        height: 10px;
-    }
-    .buscador {
-        margin-left: 150px;
-    }
+    /*---------------------------------------------General-----------------------------------*/
+
     .titulo {
         font-size: 1.3rem;
         display: flex;
@@ -225,272 +210,29 @@ body {
         height: 214px;
         margin-top: 50px
     }
-    .email {
-        width: 185px;
-    }
-    .formulario-motivo {
-        margin-right: 30px;
-    }
-    .formulario-apellido {
-        width: 120px;
-    }
-    .formulario-nombre {
-        width: 120px;
-        margin-right: 10px;
-    }
-}
-     
-                                    /*Cosas generales*/
 
-                                    /*Index*/
+    /*---------------------------------------------Index--------------------------------------*/
 
-
-.header1 {
-    width: 100%;
-}
-.contenedor-header1 {
-    width: 100%;
-    display: flex;
-    height: 90px;
-    border-width: 1px 1px 1px 1px;
-    border-style: solid;
-    background-color: #6c757d;
-}
-.contenedor-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-.boton-menu {
-    display: none;
-    width: 25px;
-    height: 25px;
-}
-.contenedor-header2 {
-    width: 100%;
-    display: flex;
-    height: 50px;
-    border-width: 1px 1px 1px 1px;
-    border-style: solid;
-    border-top: none;
-    background-color: #6c757d;
-}
-.contenedor-lista{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    list-style-type: none;
-}
-.boton-lista {
-    padding: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #4ecdc4;
-}
-.boton-cuenta-responsive {
-    display: none;
-}
-.boton-carrito {
-    width: 30px;
-    height: 30px;
-}
-.nav1 {
-    display: flex;
-    background-color: lawngreen;
-}
-.imagen-descuento {
-    width: 100%;
-}
-.section-cartas {
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-}
-.contenedor-cartas {
-    height: 500px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.carta {
-    width: 225px;
-    height: 350px;
-    background-color: #0074E4;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 20px 0 20px 0;
-    box-shadow: 0px 10px 15px 0px black;
-    cursor: pointer;
-    transition: 0.4s;
-}
-.carta:hover {
-    transform: scale(110%);
-}
-.contenido-carta {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.imagen-carta {
-    width: 100%;
-}
-.contenedor-footer1 {
-    width: 100%;
-    height: 190px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.cancelar-compra {
-    margin-top: 10px;
-    align-self: flex-start;
-}
-.contenedor-encabezados {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-.lista-footer {
-    margin-top: 50px;
-}
-.encabezado {
-    border-width: 2px;
-    border-bottom: solid;
-}
-.contenedor-footer2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 40px;
-    border-top: black inset;
-    border-top-width: 0.1rem;
-}
-.letra-chica {
-    font-size: 0.6rem;
-}
-                                    /*Categorias*/
-
-
-                                       /*Nosotros*/
-
-                                            /*Contacto*/
-.body-contacto {
-    display: grid;
-    grid-template-rows: 140px 1000px 250px;
-    grid-template-columns: 100%;
-}
-.section-formulario {
-       width: 100%;
-       height: 1000px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
-   .contenedor-formulario {
-       background-color: gold;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-       align-items: center;
-       width: 700px;
-       height: 500px;
-   }
-   .carta-formulario {
-    width: 800px;
-    height: 600px;
-    background: rgb(236, 236, 236);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    margin-left: 75px;
-    margin-right: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .consulta {
-       width: 500px;
-       height: 150px;
-   }
-                                    /*Carrito*/
-
-
-/*-----------------------------------------Media Queries-------------------------------------------------------*/
-@media screen and (max-width: 1024px) {
-    .body-inicio{
-        display: grid;
-        grid-template-rows: 90px 150px 650px 650px 250px;
-    }
-    .contenedor-footer1 {
-        font-size: 11px;
-    }
-    .logo {
-        width: 50px;
-    }
-    .boton-cuenta {
-        display: none;
-    }
-    .boton-cuenta-responsive {
-        display: block;
-    }
-    .boton-carrito {
-        width: 30px;
-        height: 30px;
-    }
-    .buscador {
+    .header-buscador {
+        margin-left: 150px;
         width: 200px;
     }
-    .contenedor-header2 {
-        display: none;
+
+    /*---------------------------------------------Contacto-------------------------------------*/
+    .section-formulario-carta-contenedor-formulario-motivo {
+        margin-right: 30px;
     }
-    .boton-menu {
-        display: block;
-        margin-right: 10px;
+    .section-formulario {
+        height: 700px;
     }
-    .boton-menu:checked .contenedor-header2{
-        display: flex;
+    .section-formulario-carta {
+        margin: 30px;
     }
-    .boton-menu:checked .body-inicio {
-        grid-template-rows:  140px 150px 650px 650px 250px;
+    .section-formulario-carta-contenedor { 
+        height: 550px;
     }
-    .nav1 {
-        height: 150px;
-    }
-    .contenedor-titulo {
-        height: 30px;
-        font-size: 10px;
-    }
-    .contenedor-cartas {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .carta {
-        margin-top: 50px;
-        width: 125px;
-        height: 250px;
-    }
-                                        /*Categorias*/
-    .body-categorias {
-        grid-template-rows: 90px 200px 650px 650px 650px 650px 650px 650px 650px 250px;
-    }
-    .boton-menu:checked .body-categorias {
-        grid-template-rows:  140px 200px 650px 650px 650px 650px 650px 650px 650px 250px;
-    }
-                                        /*Nosotros*/
-    .boton-menu:checked .body-nosotros {
-        grid-template-rows:  140px 1227px 250px;
-    }
-    .body-nosotros {
-        grid-template-rows:  90px 1227px 250px;
-    }
+
+    /*---------------------------------------------Nosotros--------------------------------------*/
     .carta-nosotros {
         font-size: 0.8rem;
         width: 200px;
@@ -500,30 +242,5 @@ body {
         font-size: 0.8rem;
         width: 400px;
         height: 200px;
-    }
-                                        /*Contacto*/
-
-
-    .section-formulario {
-        height: 700px;
-    }
-    .carta-formulario {
-        margin: 30px;
-    }
-    .contenedor-formulario {
-        width: 250px;
-        height: 550px;
-    }
-    .consulta {
-        margin: 20px;
-        width: 200px;
-        height: 50px;
-    }
-                                        /*Carrito*/
-    .body-carrito {
-        grid-template-rows:  90px 500px 250px;
-    }
-    .boton-menu:checked .body-carrito {
-        grid-template-rows: 140px 500px 250px;
     }
 }
