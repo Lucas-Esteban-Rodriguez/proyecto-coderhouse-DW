@@ -1,0 +1,67 @@
+body,html{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.card {
+    margin-top: 50px;
+    width: 240px;
+    height: 360px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
+    transition: 0.4s;
+    padding: 0px;
+    &:hover {
+        transform: scale(110%);
+    }
+}
+.precio {
+    font-weight: 900;
+    border-bottom: solid 1px black;
+}
+.cantidad {
+    margin-left: 5px;
+}
+.boton-Comprar {
+    color: #ffff;
+    padding: 5px;
+    border: transparent;
+    background-color: #5390d9;
+    &:hover {
+        color: black;
+        background-color: #ffff;
+        outline: 3px solid #5390d9;
+    }
+}
+.boton-EnviarAlCarrito {
+    color: #ffff;
+    padding: 5px;
+    border: transparent;
+    background-color: #06d6a0;
+    &:hover {
+        color: black;
+        background-color: #ffff;
+        outline: 3px solid #06d6a0;
+    }
+}
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}  
+.boton-activo {
+    border-bottom: solid 2px gold;
+}
+.titulo {
+    margin: 5px 0px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.width-50 {
+    width: 50%;
+}

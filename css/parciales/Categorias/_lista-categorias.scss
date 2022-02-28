@@ -1,35 +1,36 @@
-.lista-categorias {
-    padding: 10px;
-    transition: 0.4s;
-    &:hover {
-        padding: 20px;
+div {
+    .lista-categorias {
+        padding: 10px;
+        transition: 0.4s;
+        &:hover {
+            padding: 20px;
+        } 
+        .span-categorias {
+            padding: 5px;
+            background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(224,170,255,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            .padding1 {
+                @include padding {$padding1}
+            }
+            .padding2 {
+                @include padding {$padding2}
+            }
+            .padding3 {
+                @include padding {$padding3}
+            }
+            .padding4 {
+                @include padding {$padding4}
+            }
+            .padding6 {
+                @include padding {$padding5}
+            }
+            .padding5 {
+                @include padding {$padding6}
+            }
+            .padding7 {
+                @include padding {$padding7}
+            }
+        }
     }
-    .span-categorias {
-        padding: 5px;
-        background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
-        linear-gradient(127deg, rgba(224,170,255,.8), rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-        .padding1 {
-            padding: 5px 50px;
-        }
-        .padding2 {
-            padding: 5px 53px;
-        }
-        .padding3 {
-            padding: 5px 32px;
-        }
-        .padding4 {
-            padding: 5px 40px;
-        }
-        .padding6 {
-            padding: 5px 16px;
-        }
-        .padding5 {
-            padding: 5px 36px;
-        }
-        .padding7 {
-            padding: 5px 49px;
-        }
-    }
-    
 }

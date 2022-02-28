@@ -1,0 +1,26 @@
+$verde: #52b788;
+$flexbox: {
+    "flex": flex,
+    "centrar": center,
+    "evenly": space-evenly,
+    "between": space-between,
+    "start": flex-start,
+    "end": flex-end,
+    "wrap": wrap,
+    "column": column,
+}
+@mixin padding {
+    $padding1: 5px 50px,
+
+    $padding2:5px 53px,
+
+    $padding3 5px 32px,
+
+    $padding4:5px 40px,
+
+    $padding6:5px 16px,
+
+    $padding5:5px 36px,
+
+    $padding7:5px 49px,
+}

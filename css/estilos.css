@@ -1,8 +1,9 @@
 /*-----------------------------------------------General-----------------------------------------------------*/
-*{
+body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .card {
     margin-top: 50px;
@@ -10,15 +11,43 @@
     height: 360px;
     background: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
-    cursor: pointer;
     transition: 0.4s;
+    padding: 0px;
 }
 .card:hover {
     transform: scale(110%);
 }
+.precio {
+    font-weight: 900;
+    border-bottom: solid 1px black;
+}
+.cantidad {
+    margin-left: 5px;
+}
+.boton-Comprar {
+    color: #ffff;
+    padding: 5px;
+    border: transparent;
+    background-color: #5390d9;
+}
+.boton-Comprar:hover {
+    color: black;
+    background-color: #ffff;
+    outline: 3px solid #5390d9;
+}
+.boton-EnviarAlCarrito {
+    color: #ffff;
+    padding: 5px;
+    border: transparent;
+    background-color: #06d6a0;
+}
+.boton-EnviarAlCarrito:hover {
+    color: black;
+    background-color: #ffff;
+    outline: 3px solid #06d6a0;
+}
 .contenedor-titulo {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
@@ -31,6 +60,7 @@
     border-bottom: solid 2px gold;
 }
 .titulo {
+    margin: 5px 0px;
     font-size: 2.5rem;
     font-weight: 900;
 }
@@ -41,13 +71,12 @@ body {
 .bg-gris {
     background-color: #52b788;
 }
-.width-100 {
-    width: 100%;
-}
 .width-50 {
     width: 50%;
 }
+
 /*-------------------------------------------Index--------------------------------------------------------*/
+
 .header-logo {
     width: 70px;
     transform: scale(140%);
@@ -180,23 +209,25 @@ body {
  justify-content: space-evenly;
  align-items: center;
  width: 85%;
- height: 500px;
+ height: 80%;
 }
 .section-formulario-carta {
-width: 800px;
-height: 600px;
+width: 55%;
+height: 65%;
 background: rgb(236, 236, 236);
 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 margin-left: 75px;
 margin-right: 75px;
 display: flex;
-justify-content: center;
+flex-direction: column;
 align-items: center;
+justify-content:start;
 }
 .section-formulario-carta-contenedor-consulta {
  width: 73%;
  height: 150px;
-}   
+}
+
    /*------------------------------------------*/
 @media screen and (max-width: 1024px) {
     /*---------------------------------------------General-----------------------------------*/
@@ -218,6 +249,10 @@ align-items: center;
         width: 200px;
     }
 
+    /*------------------------------------------------Categorias--------------------------------------*/
+
+
+
     /*---------------------------------------------Contacto-------------------------------------*/
     .section-formulario-carta-contenedor-formulario-motivo {
         margin-right: 30px;
@@ -227,9 +262,11 @@ align-items: center;
     }
     .section-formulario-carta {
         margin: 30px;
+        width: 550px;
+        height: 550px;
     }
     .section-formulario-carta-contenedor { 
-        height: 550px;
+        height: 450px;
     }
 
     /*---------------------------------------------Nosotros--------------------------------------*/
