@@ -1,11 +1,16 @@
 @media screen and (max-width: 1024px) {
+    body, html{
+        overflow-x: hidden;
+    }
     .titulo {
-        font-size: 1.3rem;
-        display: flex;
+        font-size: 1.5rem!important;
     }
     .card {
         width: 140px;
         height: 214px;
         margin-top: 50px
+    }
+    .newsletter-responsive {
+        width: 90%;
     }
 }

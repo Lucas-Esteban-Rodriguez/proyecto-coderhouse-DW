@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/estilos.css">
     <title>Mateando | Contacto</title>
     <meta name="description" content="Tuviste una mala experiencia o algo que quieras hacernos saber? contactanos!">
     <meta name="keywords" content="Mateando contacto">
@@ -69,8 +69,8 @@
   <section class="section-formulario">
     <div class="section-formulario-carta">
       <div>
-        <ul class="list-unstyled d-flex mb-0 mb-lg-3 mt-lg-3">
-          <li class="">
+        <ul class="list-unstyled d-flex mb-3 mt-3 mb-lg-4 mt-lg-4">
+          <li>
             <a class="link-dark" href="https://twitter.com" target="blank">
               <svg class="bi" width="24" height="24">
                 <use xlink:href="#twitter"></use>
@@ -93,33 +93,37 @@
           </li>
         </ul>
       </div>
-      <form class="section-formulario-carta-contenedor">
-        <label for="nombre" class="contenedor-nombre-y-apellido">
+      <form class="section-formulario-carta-contenedor form-control">
+        <div class="ms-lg-0 ms-4">
+          <label for="nombre">
           Nombre:
-          <input required name="nombre" type="text" placeholder="Ej: Juan Gabriel">
-          <label for="apellido">
+            <input class="ms-lg-1" required name="nombre" type="text" placeholder="Ej: Juan Gabriel">
+          </label>
+          <label for="apellido" class="ms-lg-3">
           Apellido:
-          <input required name="apellido" type="text" placeholder="Ej: Pérez">
-        </label>
-        </label>
+            <input class="ms-lg-1" required name="apellido" type="text" placeholder="Ej: Pérez">
+          </label>
+        </div>
         <div>
-          Motivo:
-          <select class="section-formulario-carta-contenedor-formulario-motivo" required>
-            <option value="" disabled selected>Elige una opción</option>
-            <option value="">Una compra</option>
-            <option value="">Medios de pago</option>
-            <option value="">Crítica</option>
-            <option value="">Otro...</option>
+          <label for="motivo">
+            Motivo:
+            <select class="formulario-motivo" name="motivo" required>
+              <option disabled selected>Elige una opción</option>
+              <option>Una compra</option>
+              <option>Medios de pago</option>
+              <option>Crítica</option>
+              <option>Otro...</option>
           </select>
+          </label>
         </div>
         <div class="section-formulario-carta-contenedor-email">
           Email:
-          <input class="contenedor-email-email" type="email" required placeholder="Example123@Mates.com">
+          <input class="contenedor-email-email ms-lg-2" type="email" required placeholder="Example123@Mates.com">
         </div>
         <div class="contenedor-consulta">
-          <input class="section-formulario-carta-contenedor-consulta" type="text" required placeholder="Escriba aqui...">
+          <input class="section-formulario-consulta" type="text" required placeholder="Escriba aqui...">
         </div>
-        <label>
+        <label class="mt-lg-0 mt-3">
           <input type="checkbox"> Recibir novedades y ofertas
         </label>
         <label>
@@ -152,7 +156,7 @@
             <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="carrito.html">Carrito</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 offset-lg-1 ms-3 ms-lg-0">
+        <div class="col-lg-4 offset-lg-1 ms-3 ms-lg-0 newsletter-responsive mb-3 mg-lg-0 mt-3 mt-lg-0">
           <form>
             <h5>Suscribete para recibir novedades</h5>
             <p>Ofertas, novedades y mas!</p>

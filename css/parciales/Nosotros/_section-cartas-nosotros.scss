@@ -16,22 +16,29 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            &-parrafo {
-                margin: 20px 50px;
-            }
-            &-titulo {
-                border-bottom: solid 2px;
-            }
-        }
-        .carta-nosotros-grande {
-            overflow: scroll;
-            width: 600px;
-            height: 400px;
-            background: rgb(236, 236, 236);
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
-            cursor: pointer;
-            margin-top: 100px;
-            margin-bottom: 100px;
         }
     }
+    .carta-nosotros-grande {
+        overflow: scroll;
+        width: 600px;
+        height: 400px;
+        background: rgb(236, 236, 236);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+        cursor: pointer;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .carta-nosotros-contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+        
+}
+.carta-nosotros-contenedor-parrafo {
+    margin: 20px 50px;
+}
+.cartanosotros-contenedor-titulo {
+    border-bottom: solid 2px;
 }

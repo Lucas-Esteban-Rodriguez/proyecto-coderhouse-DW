@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/estilos.css">
     <title>Mateando | Carrito</title>
     <meta name="description" content="Productos agregados al carrito!">
     <meta name="keywords" content="Mis productos, Mateando carrito">
@@ -67,7 +67,7 @@
     </div>
   </nav>
   <section class="container-fluid d-flex flex-column align-items-center section-carrito justify-content-center">
-    <h1>No hay articulos en el carrito</h1>
+    <h1 class="h1-carrito">No hay articulos en el carrito</h1>
     <a href="./index.html" class="btn btn-outline-success">Volver al inicio</a>
   </section>
   <div class="mt-5">
@@ -86,14 +86,14 @@
         <div class="col-lg-2 col-5 offset-lg-1 margin-footer">
           <h5 class="border-bottom">Secciones</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="index.html">Inicio</a></li>
-            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="categorias.html">Categorias</a></li>
-            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="nosotros.html">Nosotros</a></li>
-            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="contacto.html">Contacto</a></li>
-            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="carrito.html">Carrito</a></li>
+            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="index.html">Inicio</a></li>
+            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="categorias.html">Categorias</a></li>
+            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="contacto.html">Contacto</a></li>
+            <li class="nav-item mb-2"><a class="nav-link p-0 text-muted boton-activo" href="carrito.html">Carrito</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 offset-lg-1 ms-3 ms-lg-0">
+        <div class="col-lg-4 offset-lg-1 ms-3 ms-lg-0  newsletter-responsive mb-3 mg-lg-0 mt-3 mt-lg-0">
           <form>
             <h5>Suscribete para recibir novedades</h5>
             <p>Ofertas, novedades y mas!</p>
