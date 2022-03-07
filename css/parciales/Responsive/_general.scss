@@ -7,8 +7,19 @@
     }
     .card {
         width: 140px;
-        height: 214px;
-        margin-top: 50px
+        height: 254px;
+        margin-top: 50px;
+        p {
+            font-size: 0.8rem;
+        }
+        label {
+            font-size: 0.8rem;
+        }
+        div button{
+            font-size: 0.8rem;
+            padding: 4px 0px;
+            transform: scaleX(90%);
+        }
     }
     .newsletter-responsive {
         width: 90%;

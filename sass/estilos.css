@@ -11,7 +11,7 @@ body, html {
 .card {
   margin-top: 50px;
   width: 240px;
-  height: 360px;
+  height: 400px;
   background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
@@ -25,13 +25,9 @@ body, html {
           transform: scale(110%);
 }
 
-.precio {
+.card p {
   font-weight: 900;
   border-bottom: solid 1px black;
-}
-
-.cantidad {
-  margin-left: 5px;
 }
 
 .boton-Comprar {
@@ -380,8 +376,20 @@ div .lista-categorias .span-padding7 {
   }
   .card {
     width: 140px;
-    height: 214px;
+    height: 254px;
     margin-top: 50px;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+  .card label {
+    font-size: 0.8rem;
+  }
+  .card div button {
+    font-size: 0.8rem;
+    padding: 4px 0px;
+    -webkit-transform: scaleX(90%);
+            transform: scaleX(90%);
   }
   .newsletter-responsive {
     width: 90%;
