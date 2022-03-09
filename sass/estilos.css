@@ -8,6 +8,38 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
+.section-login {
+  width: 100%;
+  height: 100%;
+}
+
+.section-login .header-logo {
+  width: 15%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-login .header-logo:hover {
+  -webkit-transform: scale(80%);
+          transform: scale(80%);
+}
+
+.boton-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: solid 0.5px black;
+  background-color: violet;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.boton-to-top:hover {
+  background-color: turquoise;
+}
+
 .card {
   margin-top: 50px;
   width: 240px;
@@ -141,11 +173,11 @@ nav {
 }
 
 .CarruselDescuentos {
-  height: 500px;
+  height: 400px;
 }
 
 .CarruselDescuentos .img-descuentos {
-  height: 500px;
+  height: 400px;
 }
 
 div .lista-categorias {
@@ -370,6 +402,9 @@ div .lista-categorias .span-padding7 {
 @media screen and (max-width: 1024px) {
   body, html {
     overflow-x: hidden;
+  }
+  .boton-to-top {
+    background-color: turquoise;
   }
   .titulo {
     font-size: 1.5rem !important;

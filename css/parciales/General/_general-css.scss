@@ -5,8 +5,32 @@ body, html{
     overflow-x: hidden;
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
-    
 }
+.section-login {
+    width: 100%;
+    height: 100%;
+    .header-logo {
+        width: 15%;
+        transition: 0.4s;
+    &:hover {
+        transform: scale(80%);
+        }
+    }
+}
+.boton-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: solid 0.5px black;
+    background-color: violet;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    &:hover {
+      background-color: turquoise;
+    }
+  }
 .card {
     margin-top: 50px;
     width: 240px;
