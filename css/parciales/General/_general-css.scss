@@ -6,15 +6,16 @@ body, html{
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
-.section-login {
+.section-cartas {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    .header-logo {
-        width: 15%;
-        transition: 0.4s;
-    &:hover {
-        transform: scale(80%);
-        }
+    margin: 0px!important;
+    .Contenedor-de-cartas {
+        width: 100%;
+        margin: 0px!important;
+        padding: 0px!important;
+        justify-content: space-evenly;
     }
 }
 .boton-to-top {
@@ -54,6 +55,10 @@ body, html{
     }
     select {
         cursor: pointer;
+        border-radius: 50px;
+        border: 2px solid #3a86ff;
+        background-color: transparent;
+        color: #3a86ff;
     }
 }
 .boton-Comprar {

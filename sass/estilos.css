@@ -8,20 +8,24 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
-.section-login {
+.section-cartas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: 100%;
+  margin: 0px !important;
 }
 
-.section-login .header-logo {
-  width: 15%;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.section-login .header-logo:hover {
-  -webkit-transform: scale(80%);
-          transform: scale(80%);
+.section-cartas .Contenedor-de-cartas {
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .boton-to-top {
@@ -72,6 +76,10 @@ body, html {
 
 .card select {
   cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid #3a86ff;
+  background-color: transparent;
+  color: #3a86ff;
 }
 
 .boton-Comprar {
@@ -194,50 +202,21 @@ footer div form button {
 }
 
 .CarruselDescuentos .img-descuentos {
+  width: 100%;
   height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #484848;
 }
 
 div .lista-categorias {
-  padding: 10px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-div .lista-categorias:hover {
-  padding: 20px;
-}
-
-div .lista-categorias .span-categorias {
-  padding: 5px;
+  border: none;
+  border-radius: 0px;
   background: linear-gradient(217deg, rgba(46, 196, 182, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(224, 170, 255, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
-div .lista-categorias .span-padding1 {
-  padding: 5px 50px;
-}
-
-div .lista-categorias .span-padding2 {
-  padding: 5px 53px;
-}
-
-div .lista-categorias .span-padding3 {
-  padding: 5px 32px;
-}
-
-div .lista-categorias .span-padding4 {
-  padding: 5px 40px;
-}
-
-div .lista-categorias .span-padding6 {
-  padding: 5px 48px;
-}
-
-div .lista-categorias .span-padding5 {
-  padding: 5px 36px;
-}
-
-div .lista-categorias .span-padding7 {
-  padding: 5px 49px;
+div .lista-categorias:hover {
+  background: linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), linear-gradient(217deg, rgba(46, 196, 182, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(225, 50, 255, 0.8), rgba(0, 255, 0, 0) 70.71%);
 }
 
 .contenedor-cartas-nosotros {
@@ -252,16 +231,15 @@ div .lista-categorias .span-padding7 {
 }
 
 .contenedor-cartas-nosotros .carta-nosotros {
-  overflow: scroll;
+  cursor: default;
+  overflow: auto;
   width: 400px;
   height: 450px;
   background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
-  cursor: pointer;
-  margin-left: 60px;
-  margin-right: 50px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contenedor-cartas-nosotros .carta-nosotros .carta-nosotros-contenedor {
@@ -278,15 +256,15 @@ div .lista-categorias .span-padding7 {
 }
 
 .contenedor-cartas-nosotros .carta-nosotros-grande {
-  overflow: scroll;
+  cursor: default;
+  overflow: auto;
   width: 600px;
   height: 400px;
   background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
-  cursor: pointer;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contenedor-cartas-nosotros .carta-nosotros-grande .carta-nosotros-contenedor {
@@ -308,6 +286,18 @@ div .lista-categorias .span-padding7 {
 
 .cartanosotros-contenedor-titulo {
   border-bottom: solid 2px;
+}
+
+.img-nosotros {
+  height: 450px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+}
+
+.img-nosotros-grande {
+  height: 400px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
 }
 
 .section-formulario {
@@ -416,7 +406,7 @@ div .lista-categorias .span-padding7 {
   height: 600px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   body, html {
     overflow-x: hidden;
   }
@@ -429,7 +419,6 @@ div .lista-categorias .span-padding7 {
   .card {
     width: 140px;
     height: 254px;
-    margin-top: 50px;
   }
   .card p {
     font-size: 0.8rem;
@@ -445,16 +434,26 @@ div .lista-categorias .span-padding7 {
     -webkit-transform: scaleX(90%);
             transform: scaleX(90%);
   }
-  .card .boton-Comprar:hover {
-    -webkit-transform: scale(105%);
-            transform: scale(105%);
-  }
-  .card .boton-EnviarAlCarrito:hover {
-    -webkit-transform: scale(105%);
-            transform: scale(105%);
+  .card div button:hover {
+    -webkit-transform: scaleX(90%);
+            transform: scaleX(90%);
   }
   .newsletter-responsive {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
+  .card {
+    width: 200px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1026px) {
+  .card {
+    width: 300px;
+    height: 600px;
   }
 }
 
@@ -472,6 +471,27 @@ div .lista-categorias .span-padding7 {
 }
 
 @media screen and (max-width: 1024px) {
+  .carta-nosotros {
+    height: 350px !important;
+    width: 300px !important;
+  }
+  .carta-nosotros h1 {
+    font-size: 1.8rem;
+  }
+  .carta-nosotros-grande {
+    width: 300px !important;
+    height: 400px !important;
+  }
+  .carta-nosotros-grande h1 {
+    font-size: 1.6rem;
+  }
+  .carta-nosotros-contenedor-parrafo {
+    margin: 20px 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .section-formulario {
     height: 700px;
   }
@@ -481,22 +501,10 @@ div .lista-categorias .span-padding7 {
     height: 550px;
   }
   .section-formulario .section-formulario-carta .section-formulario-carta-contenedor {
-    height: 450px;
+    height: 550px;
   }
   .section-formulario .section-formulario-carta .section-formulario-carta-contenedor .section-formulario-carta-contenedor-formulario-motivo {
     margin-right: 30px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .section-formulario {
-    height: 700px;
-  }
-  .section-formulario-carta {
-    margin: 30px;
-  }
-  .section-formulario-carta-contenedor {
-    height: 550px;
   }
 }
 

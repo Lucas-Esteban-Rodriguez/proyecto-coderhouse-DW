@@ -1,16 +1,20 @@
 @media screen and (max-width: 1024px) {
-    .section-formulario {
-        height: 700px;
-        .section-formulario-carta {
-            margin: 30px;
-            width: 550px;
-            height: 550px;
-            .section-formulario-carta-contenedor { 
-                height: 450px;
-                .section-formulario-carta-contenedor-formulario-motivo {
-                    margin-right: 30px;
-                }
-            }
+    .carta-nosotros {
+        height: 350px!important;
+        width: 300px!important;
+        h1 {
+            font-size: 1.8rem;
         }
+    }
+    .carta-nosotros-grande {
+        width: 300px!important;
+        height: 400px!important;
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+    .carta-nosotros-contenedor-parrafo {
+        margin: 20px 20px;
+        font-size: 0.8rem;
     }
 }

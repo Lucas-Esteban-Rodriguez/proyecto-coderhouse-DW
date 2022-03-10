@@ -67,22 +67,22 @@
       </div>
     </div>
   </nav>
-  <div class="width-100" id="categorias">
-    <div class="btn-group-vertical d-flex mt-4 width-100 border-bottom border-top">
-      <a href="#Yerbas" class="btn border-bottom border-top align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding1">Yerbas</span></a>
-      <a href="#Mates" class="btn border-bottom align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding2">Mates</span></a>
-      <a href="#Endulzantes" class="btn border-bottom align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding3">Endulzantes</span></a>
-      <a href="#Bombillas" class="btn border-bottom align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding4">Bombillas</span></a>
-      <a href="#Termos" class="btn border-bottom align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding6">Termos</span></a>
-      <a href="#Accesorios" class="btn border-bottom align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding5">Accesorios</span></a>
-      <a href="#Ofertas" class="btn border-bottom align-self-center lista-categorias d-flex" style="width: 50%;"><span class="span-categorias span-padding7">Ofertas</span></a>
+  <div class="container-fluid border-bottom pb-3 sticky-top">
+    <div class="d-flex flex-wrap btn-group mt-4">
+      <a href="#Yerbas" class="btn lista-categorias col-lg-2 col-4">Yerbas</a>
+      <a href="#Mates" class="btn lista-categorias col-lg-2 col-4">Mates</a>
+      <a href="#Endulzantes" class="btn lista-categorias col-lg-2 col-4">Endulzantes</a>
+      <a href="#Bombillas" class="btn lista-categorias col-lg-2 col-4">Bombillas</a>
+      <a href="#Termos" class="btn lista-categorias col-lg-2 col-4">Termos</a>
+      <a href="#Accesorios" class="btn lista-categorias col-lg-2 col-4">Accesorios</a>
+      <a href="#Ofertas" class="btn fw-bold fs-4 lista-categorias mt-4 col-lg-2 col-4">Ofertas</a>
     </div>
   </div>
   <div class="container contenedor-titulo mt-5">
     <p class="titulo" id="Yerbas">Yerbas</p>
   </div>
-  <section class="row">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
       <div class="card">
         <img src="/img/Productos/Yerbas/Playadito-500g.jpg" alt="Yerba Marca Playadito de 500gr">
         <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$5.000</p>
@@ -178,10 +178,10 @@
     </div>
   </section>
   <div class="container contenedor-titulo mt-5">
-      <p class="titulo" id="Mates">Mates</p>
+    <p class="titulo" id="Mates">Mates</p>
   </div>
-  <section class="row">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
       <div class="card">
         <img src="/img/Productos/Mates/CeramicaYMadera.jpg" alt="Mate de Ceramica y Madera">
         <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$5.000</p>
@@ -277,10 +277,10 @@
     </div>
   </section>
   <div class="container contenedor-titulo mt-5">
-      <p class="titulo" id="Endulzantes">Endulzantes</p>
+    <p class="titulo" id="Endulzantes">Endulzantes</p>
   </div>
-  <section class="row">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
       <div class="card">
         <img src="/img/Productos/Endulzantes/LedesmaClásica-1kg.jpg" alt="Azúcar Marca Ledesma, Clásica, de 1kg">
         <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$99</p>
@@ -376,53 +376,405 @@
     </div>
   </section>
   <div class="container contenedor-titulo mt-5">
-      <p class="titulo" id="Bombillas">Bombillas</p>
+    <p class="titulo" id="Bombillas">Bombillas</p>
   </div>
-  <section class="row width-100">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
+      <div class="card">
+        <img src="/img/Productos/Bombillas/UnMate-AceroOxidableChata.jpg" alt="Bombilla Marca Un Mate, Chata, de Acero Inoxidable">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$1.375</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Bombillas/Generico-AceroInoxidablePicoDeLoro.jpg" alt="Bombilla Generica, Pico de loro, Acero Inoxidable">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$599</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Bombillas/MateUrbano-AceroInoxidableSacaYerba.jpg" alt="Bombilla marca Mate Urbano, Saca yerba, de Acero Inoxidable">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$299</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Bombillas/Generico-AceroInoxidablePicodeLoroGrueso.jpg" alt="Bombilla Marca Genérica, Pico de Loro Grueso, de Acero Inoxidable">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$323</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
     </div>
   </section>
   <div class="container contenedor-titulo mt-5">
-      <p class="titulo" id="Termos">Termos</p>
+    <p class="titulo" id="Termos">Termos</p>
   </div>
-  <section class="row width-100">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
+      <div class="card">
+        <img src="/img/Productos/Termos/Genérico-ManijaYPico.jpg" alt="Termo Genérico con Media Manija y Pico de 1 Litro">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$2.399</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Termos/Lumilagro-1L.jpg" alt="Termo Marca Lumilagro,Acero Inoxidable, de 1 Litro">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$5.395</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Termos/StanleyClásico-1L.jpg" alt="Termo Marca Stanley, Clásico, Acero Inoxidable, de 1 Litro">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$16.717</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Termos/StanleyClásico-1,9L.jpg" alt="Termo Marca Stanley, Clásico, Acero Inoxidable, 1,9L">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$34.000</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
     </div>
   </section>
   <div class="container contenedor-titulo mt-5">
-      <p class="titulo" id="Accesorios">Accesorios</p>
+    <p class="titulo" id="Accesorios">Accesorios</p>
   </div>
-  <section class="row width-100">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
+      <div class="card">
+        <img src="/img/Productos/Accesorios/FiltroParaBombilla.jpg" alt="Accesorio, Filtro para bombillas">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$50</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Accesorios/Madu-YerberoYAzucarero-EcologicoCuero.jpg" alt="Yerbero y Azucarero Marca Madu, De Cuero Ecologico">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$1.249</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Accesorios/Genérico-YerberoYAzucarero-Lata.jpg" alt="Yerbero y Azucarero Marca Genérica, de Lata">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$999</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Accesorios/Generico-BolsoMatero.jpg" alt="Bolso Matero Genérico">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$2.550</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
     </div>
   </section>
   <div class="container contenedor-titulo mt-5">
-      <p class="titulo" id="Ofertas">Ofertas</p>
+    <p class="titulo" id="Ofertas">Ofertas</p>
   </div>
-  <section class="row width-100">
-    <div class="row col-12 justify-content-evenly ms-lg-0 ms-1">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+  <section class="container-fluid section-cartas">
+    <div class="row justify-content-evenly Contenedor-de-cartas">
+      <div class="card">
+        <img src="/img/Productos/Ofertas/Oferta1.jpg" alt="Mate con Bombilla de Regalo">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$1.200</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Ofertas/UnMate-SetMatero.jpg" alt="Set Matero Completo, Mochila Matera con Yerbero, Mate y Bombilla">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$13.999</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Ofertas/Genérico-SetMatero.jpg" alt="Set Matero Completo, Bolso Matero, Mate con Bombilla, Yerbero y Azucarero y Termo">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$16.999</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/Productos/Ofertas/Combo-MateYTermo.jpg" alt="Combo Mate y Termo">
+        <p class="d-flex justify-content-center precio width-50 offset-3 mt-lg-3">$999</p>
+        <label class="d-flex justify-content-center mt-lg-2" for="cantidad">
+          Cantidad:
+          <select class="ms-2" name="cantidad">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </label>
+        <div class="d-flex justify-content-evenly mt-lg-4 mt-2">
+          <button class="boton-EnviarAlCarrito">Enviar al carrito</button>
+          <button class="boton-Comprar">Comprar</button>
+        </div>
+      </div>
     </div>
   </section>
   <div class="mt-5">
     <footer class="py-5 bd-footer bg-light">
-      <div class="row width-100">
-        <div class="col-lg-2 col-5 ms-5 offset-lg-1 margin-footer">
+      <div class="row justify-content-evenly">
+        <div class="col-lg-2 col-5 ms-5 offset-lg-1">
           <h5 class="border-bottom">Medios de pago</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2 text-muted">Tarjeta de Crédito</li>
@@ -432,7 +784,7 @@
             <li class="nav-item mb-2 text-muted">Divisas extranjeras</li>
           </ul>
         </div>
-        <div class="col-lg-2 col-5 offset-lg-1 margin-footer">
+        <div class="col-lg-2 col-5 offset-lg-1">
           <h5 class="border-bottom">Secciones</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a class="nav-link p-0 text-muted nav-boton" href="index.html">Inicio</a></li>
@@ -454,8 +806,8 @@
           </form>
         </div>
       </div>
-      <div class="d-flex justify-content-between py-4 border-top footer2">
-        <p class="offset-lg-4 ms-3 ms-lg-0">© 2021 Mateando, Inc. Todos los derechos reservados.</p>
+      <div class="d-flex justify-content-between py-4 border-top">
+        <p class="ms-3 ms-lg-5">© 2021 Mateando, Inc. Todos los derechos reservados.</p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
             <a class="link-dark" href="https://twitter.com" target="blank">

@@ -1,36 +1,16 @@
 div {
     .lista-categorias {
-        padding: 10px;
-        transition: 0.4s;
+        border: none;
+        border-radius: 0px;
+        background:
+        linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(224,170,255,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
         &:hover {
-            padding: 20px;
-        } 
-        .span-categorias {
-            padding: 5px;
-            background: linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(224,170,255,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-        }
-        .span-padding1 {
-            padding: 5px 50px;
-        }
-        .span-padding2 {
-            padding: 5px 53px;
-        }
-        .span-padding3 {
-            padding: 5px 32px;
-        }
-        .span-padding4 {
-            padding: 5px 40px;
-        }
-        .span-padding6 {
-            padding: 5px 48px;
-        }
-        .span-padding5 {
-            padding: 5px 36px;
-        }
-        .span-padding7 {
-            padding: 5px 49px;
+            background:
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%),
+            linear-gradient(217deg, rgba(46,196,182,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(225,50,255,.8), rgba(0,255,0,0) 70.71%);
         }
     }
 }

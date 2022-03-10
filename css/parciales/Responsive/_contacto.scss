@@ -1,11 +1,16 @@
 @media screen and (max-width: 1024px) {
     .section-formulario {
         height: 700px;
-    }
-    .section-formulario-carta {
-        margin: 30px;
-    }
-    .section-formulario-carta-contenedor { 
-        height: 550px;
+        .section-formulario-carta {
+            margin: 30px;
+            width: 550px;
+            height: 550px;
+            .section-formulario-carta-contenedor { 
+                height: 550px;
+                .section-formulario-carta-contenedor-formulario-motivo {
+                    margin-right: 30px;
+                }
+            }
+        }
     }
 }

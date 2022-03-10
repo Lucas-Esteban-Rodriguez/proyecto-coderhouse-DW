@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     body, html{
         overflow-x: hidden;
     }
@@ -11,7 +11,6 @@
     .card {
         width: 140px;
         height: 254px;
-        margin-top: 50px;
         p {
             font-size: 0.8rem;
             margin-bottom: 8px;
@@ -24,15 +23,25 @@
             font-size: 0.8rem;
             padding: 4px 0px;
             transform: scaleX(90%);
-        }
-        .boton-Comprar:hover {
-            transform: scale(105%);
-        }
-        .boton-EnviarAlCarrito:hover {
-            transform: scale(105%);
+            &:hover {
+                transform: scaleX(90%);
+            }
         }
     }
     .newsletter-responsive {
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
+    .card {
+        width: 200px;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1026px) {
+    .card {
+        width: 300px;
+        height: 600px;
     }
 }

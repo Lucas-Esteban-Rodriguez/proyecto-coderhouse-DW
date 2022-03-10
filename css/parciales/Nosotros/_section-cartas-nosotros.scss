@@ -3,15 +3,14 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     .carta-nosotros {
-        overflow: scroll;
+        cursor: default;
+        overflow: auto;
         width: 400px;
         height: 450px;
         background: rgb(236, 236, 236);
         box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
-        cursor: pointer;
-        margin-left: 60px;
-        margin-right: 50px;
         margin-top: 50px;
+        margin-bottom: 50px;
         .carta-nosotros-contenedor {
             display: flex;
             flex-direction: column;
@@ -19,14 +18,14 @@
         }
     }
     .carta-nosotros-grande {
-        overflow: scroll;
+        cursor: default;
+        overflow: auto;
         width: 600px;
         height: 400px;
         background: rgb(236, 236, 236);
         box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
-        cursor: pointer;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         .carta-nosotros-contenedor {
             display: flex;
             flex-direction: column;
@@ -41,4 +40,12 @@
 }
 .cartanosotros-contenedor-titulo {
     border-bottom: solid 2px;
+}
+.img-nosotros {
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+}
+.img-nosotros-grande {
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
 }
