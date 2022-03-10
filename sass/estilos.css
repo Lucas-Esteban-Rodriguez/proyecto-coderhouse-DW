@@ -62,6 +62,18 @@ body, html {
   border-bottom: solid 1px black;
 }
 
+.card img {
+  background-color: #fff;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.card select {
+  cursor: pointer;
+}
+
 .boton-Comprar {
   color: #ffff;
   padding: 5px;
@@ -72,8 +84,8 @@ body, html {
 }
 
 .boton-Comprar:hover {
-  -webkit-transform: scale(120%);
-          transform: scale(120%);
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 .boton-EnviarAlCarrito {
@@ -86,8 +98,8 @@ body, html {
 }
 
 .boton-EnviarAlCarrito:hover {
-  -webkit-transform: scale(120%);
-          transform: scale(120%);
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 .contenedor-titulo {
@@ -172,6 +184,11 @@ nav {
   font-weight: 900;
 }
 
+footer div form button {
+  background-color: #52b788 !important;
+  border: 0.5px solid #52b788 !important;
+}
+
 .CarruselDescuentos {
   height: 400px;
 }
@@ -212,7 +229,7 @@ div .lista-categorias .span-padding4 {
 }
 
 div .lista-categorias .span-padding6 {
-  padding: 5px 16px;
+  padding: 5px 48px;
 }
 
 div .lista-categorias .span-padding5 {
@@ -416,6 +433,8 @@ div .lista-categorias .span-padding7 {
   }
   .card p {
     font-size: 0.8rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
   }
   .card label {
     font-size: 0.8rem;
@@ -425,6 +444,14 @@ div .lista-categorias .span-padding7 {
     padding: 4px 0px;
     -webkit-transform: scaleX(90%);
             transform: scaleX(90%);
+  }
+  .card .boton-Comprar:hover {
+    -webkit-transform: scale(105%);
+            transform: scale(105%);
+  }
+  .card .boton-EnviarAlCarrito:hover {
+    -webkit-transform: scale(105%);
+            transform: scale(105%);
   }
   .newsletter-responsive {
     width: 90%;

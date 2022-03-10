@@ -46,6 +46,15 @@ body, html{
         font-weight: 900;
         border-bottom: solid 1px black;
     }
+    img {
+        background-color: #fff;
+        height: 60%;
+        object-fit: contain;
+        width: 100%;
+    }
+    select {
+        cursor: pointer;
+    }
 }
 .boton-Comprar {
     color: #ffff;
@@ -54,7 +63,7 @@ body, html{
     background-color: #5390d9;
     transition: 0.4s;
     &:hover {
-        transform: scale(120%);
+        transform: scale(110%);
     }
 }
 .boton-EnviarAlCarrito {
@@ -64,7 +73,7 @@ body, html{
     background-color: #06d6a0;
     transition: 0.4s;
     &:hover {
-        transform: scale(120%);
+        transform: scale(110%);
     }
 }
 .contenedor-titulo {
