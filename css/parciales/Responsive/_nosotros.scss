@@ -18,3 +18,11 @@
         font-size: 0.8rem;
     }
 }
+/*------------------------------------------Dispositivos Pequeños-------------------------------------------------*/
+
+@media screen and (max-width: 425px) {
+    .carta-nosotros {
+        height: 350px!important;
+        width: 275px!important;
+    }
+}
