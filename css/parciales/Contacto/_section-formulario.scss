@@ -17,13 +17,18 @@
     align-items: center;
     justify-content: start;
         .section-formulario-carta-contenedor {
-         background-color: gold;
+         background-color: #06d6a0;
          display: flex;
          flex-direction: column;
          justify-content: space-evenly;
          align-items: center;
          width: 700px;
          height: 480px;
+         :focus {
+             outline: 3px solid #4361ee;
+             border: lightblue;
+             box-shadow: rgba(173, 216, 230, 0.4) 0px 2px 4px, rgba(173, 216, 230,  0.3) 0px 7px 13px -3px, rgba(173, 216, 230, 0.2) 0px -3px 0px inset;
+         }
             .contenedor-nombre-y-apellido {
                 width: 100%;
                 display: flex;

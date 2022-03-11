@@ -370,7 +370,7 @@ div .lista-categorias:hover {
 }
 
 .section-formulario .section-formulario-carta .section-formulario-carta-contenedor {
-  background-color: gold;
+  background-color: #06d6a0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,6 +386,13 @@ div .lista-categorias:hover {
           align-items: center;
   width: 700px;
   height: 480px;
+}
+
+.section-formulario .section-formulario-carta .section-formulario-carta-contenedor :focus {
+  outline: 3px solid #4361ee;
+  border: lightblue;
+  -webkit-box-shadow: rgba(173, 216, 230, 0.4) 0px 2px 4px, rgba(173, 216, 230, 0.3) 0px 7px 13px -3px, rgba(173, 216, 230, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(173, 216, 230, 0.4) 0px 2px 4px, rgba(173, 216, 230, 0.3) 0px 7px 13px -3px, rgba(173, 216, 230, 0.2) 0px -3px 0px inset;
 }
 
 .section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-nombre-y-apellido {
@@ -566,6 +573,7 @@ div .lista-categorias:hover {
 @media screen and (max-width: 1024px) {
   .section-formulario {
     height: 700px;
+    background-size: contain;
   }
   .section-formulario .section-formulario-carta {
     width: 600px;
