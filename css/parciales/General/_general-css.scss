@@ -6,6 +6,9 @@ body, html{
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
+nav div div ul li {
+    width: 50%;
+}
 .section-cartas {
     display: flex;
     justify-content: center;

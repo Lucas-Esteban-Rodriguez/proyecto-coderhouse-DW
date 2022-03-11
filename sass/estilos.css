@@ -9,6 +9,10 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
+nav div div ul li {
+  width: 50%;
+}
+
 .section-cartas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,6 +446,7 @@ div .lista-categorias:hover {
   }
   .boton-to-top {
     background-color: turquoise;
+    padding: 0px;
   }
   .titulo {
     font-size: 1.5rem !important;
@@ -576,6 +581,13 @@ div .lista-categorias:hover {
 @media screen and (max-width: 1024px) {
   .h1-carrito {
     font-size: 1.5rem;
+  }
+}
+
+/*-----------------------------------------------Pantallas Pequeñas--------------------------------------*/
+@media screen and (max-width: 320px) {
+  .h1-carrito {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
