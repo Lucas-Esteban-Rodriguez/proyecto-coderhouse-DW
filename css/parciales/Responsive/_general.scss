@@ -10,14 +10,13 @@
     }
     .card {
         width: 140px;
-        height: 254px;
-        p {
-            font-size: 0.8rem;
-            margin-bottom: 8px;
-            margin-top: 8px;
+        height: 300px;
+        font-size: 0.8rem;
+        .carta-parrafo {
+            margin-bottom: 0px;
         }
-        label {
-            font-size: 0.8rem;
+        .precio {
+            margin-bottom: 10px;
         }
         div button{
             font-size: 0.8rem;
@@ -36,12 +35,6 @@
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
     .card {
         width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 1026px) {
-    .card {
-        width: 300px;
-        height: 600px;
+        height: 420px;
     }
 }

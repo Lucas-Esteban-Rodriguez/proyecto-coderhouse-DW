@@ -48,7 +48,7 @@ body, html {
 .card {
   margin-top: 50px;
   width: 240px;
-  height: 480px;
+  height: 420px;
   background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
@@ -73,7 +73,7 @@ body, html {
 
 .card img {
   background-color: #fff;
-  height: 60%;
+  height: 53%;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -424,15 +424,14 @@ div .lista-categorias:hover {
   }
   .card {
     width: 140px;
-    height: 254px;
-  }
-  .card p {
+    height: 300px;
     font-size: 0.8rem;
-    margin-bottom: 8px;
-    margin-top: 8px;
   }
-  .card label {
-    font-size: 0.8rem;
+  .card .carta-parrafo {
+    margin-bottom: 0px;
+  }
+  .card .precio {
+    margin-bottom: 10px;
   }
   .card div button {
     font-size: 0.8rem;
@@ -452,14 +451,7 @@ div .lista-categorias:hover {
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
   .card {
     width: 200px;
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1026px) {
-  .card {
-    width: 300px;
-    height: 600px;
+    height: 420px;
   }
 }
 
