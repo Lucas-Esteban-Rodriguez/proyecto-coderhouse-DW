@@ -137,6 +137,10 @@ body, html {
   border-bottom: solid 2px white;
 }
 
+.footer-boton:hover {
+  border-bottom: solid 2px black;
+}
+
 header {
   background-color: #52b788;
 }
