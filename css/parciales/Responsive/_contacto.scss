@@ -1,15 +1,33 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px){
     .section-formulario {
         height: 700px;
         .section-formulario-carta {
-            margin: 30px;
-            width: 550px;
-            height: 550px;
+            width: 600px;
+            height: 500px;
             .section-formulario-carta-contenedor { 
-                height: 550px;
-                .section-formulario-carta-contenedor-formulario-motivo {
-                    margin-right: 30px;
-                }
+                width: 520px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+/*-------------------------------------------Pantallas Pequeñas------------------------------------------------*/
+
+@media screen and (max-width: 425px) {
+    .section-formulario-carta {
+        width: 300px!important;
+        height: 490px!important;
+        margin: 0px!important;
+        font-size: 0.8rem;
+        .section-formulario-carta-contenedor {
+            width: 280px!important;
+            height: 400px!important;
+            .contenedor-email {
+                width: 250px!important;
+            }
+            .contenedor-consulta {
+                width: 250px!important;
             }
         }
     }

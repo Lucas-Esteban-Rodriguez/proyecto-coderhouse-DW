@@ -302,7 +302,6 @@ div .lista-categorias:hover {
 }
 
 .section-formulario {
-  width: 100%;
   height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,8 +315,8 @@ div .lista-categorias:hover {
 }
 
 .section-formulario .section-formulario-carta {
-  width: 55%;
-  height: 65%;
+  width: 800px;
+  height: 600px;
   background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -353,8 +352,8 @@ div .lista-categorias:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85%;
-  height: 80%;
+  width: 700px;
+  height: 480px;
 }
 
 .section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-nombre-y-apellido {
@@ -365,11 +364,9 @@ div .lista-categorias:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.section-formulario .section-formulario-carta .section-formulario-carta-contenedor .section-formulario-carta-contenedor-email {
+.section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-email {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,13 +376,13 @@ div .lista-categorias:hover {
           justify-content: center;
 }
 
-.section-formulario .section-formulario-carta .section-formulario-carta-contenedor .section-formulario-carta-contenedor-email .contenedor-email-email {
-  width: 67%;
+.section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-email .email {
+  width: 323px;
 }
 
 .section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-consulta {
-  width: 100%;
-  height: 30%;
+  width: 365px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,9 +394,9 @@ div .lista-categorias:hover {
           align-items: center;
 }
 
-.section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-consulta .section-formulario-consulta {
-  width: 73%;
-  height: 100px;
+.section-formulario .section-formulario-carta .section-formulario-carta-contenedor .contenedor-consulta .consulta {
+  width: 100%;
+  height: 100%;
 }
 
 .section-carrito {
@@ -505,15 +502,32 @@ div .lista-categorias:hover {
     height: 700px;
   }
   .section-formulario .section-formulario-carta {
-    margin: 30px;
-    width: 550px;
-    height: 550px;
+    width: 600px;
+    height: 500px;
   }
   .section-formulario .section-formulario-carta .section-formulario-carta-contenedor {
-    height: 550px;
+    width: 520px;
+    height: 400px;
   }
-  .section-formulario .section-formulario-carta .section-formulario-carta-contenedor .section-formulario-carta-contenedor-formulario-motivo {
-    margin-right: 30px;
+}
+
+/*-------------------------------------------Pantallas Pequeñas------------------------------------------------*/
+@media screen and (max-width: 425px) {
+  .section-formulario-carta {
+    width: 300px !important;
+    height: 490px !important;
+    margin: 0px !important;
+    font-size: 0.8rem;
+  }
+  .section-formulario-carta .section-formulario-carta-contenedor {
+    width: 280px !important;
+    height: 400px !important;
+  }
+  .section-formulario-carta .section-formulario-carta-contenedor .contenedor-email {
+    width: 250px !important;
+  }
+  .section-formulario-carta .section-formulario-carta-contenedor .contenedor-consulta {
+    width: 250px !important;
   }
 }
 
