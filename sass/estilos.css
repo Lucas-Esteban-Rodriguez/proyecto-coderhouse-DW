@@ -186,7 +186,7 @@ header .header-buscador {
 
 header .header-carrito {
   height: 35px;
-  width: 30px;
+  width: 35px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -438,6 +438,10 @@ div .lista-categorias:hover {
   body, html {
     overflow-x: hidden;
   }
+  .header-buscador {
+    margin-left: 180px !important;
+    width: 50% !important;
+  }
   footer {
     font-size: 0.8rem;
   }
@@ -490,6 +494,19 @@ div .lista-categorias:hover {
   .card .carta-parrafo {
     width: 180px;
     margin-left: 15px !important;
+  }
+  .header-buscador {
+    width: 300px !important;
+    margin-left: 10px !important;
+    margin-right: 95px !important;
+  }
+}
+
+/*-------------------------------------Pantallas Pequeñas---------------------------------------------*/
+@media screen and (max-width: 320px) {
+  .header-buscador {
+    width: 200px !important;
+    margin-left: 170px !important;
   }
 }
 

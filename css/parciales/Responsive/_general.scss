@@ -2,6 +2,10 @@
     body, html{
         overflow-x: hidden;
     }
+    .header-buscador {
+        margin-left: 180px!important;
+        width: 50%!important;
+    }
     footer {
         font-size: 0.8rem;
         h5 {
@@ -52,5 +56,19 @@
             width: 180px;
             margin-left: 15px!important
         }
+    }
+    .header-buscador {
+        width: 300px!important;
+        margin-left: 10px!important;
+        margin-right: 95px!important;
+    }
+}
+
+/*-------------------------------------Pantallas Pequeñas---------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+    .header-buscador {
+        width: 200px!important;
+        margin-left: 170px!important;
     }
 }
