@@ -134,7 +134,7 @@ body, html {
 }
 
 .nav-boton:hover {
-  border-bottom: solid 1px black;
+  border-bottom: solid 2px white;
 }
 
 header {
@@ -489,11 +489,17 @@ div .lista-categorias:hover {
   }
 }
 
-/*------------------------------------------Dispositivos Pequeños-------------------------------------------------*/
+/*------------------------------------------Pantallas Pequeños-------------------------------------------------*/
 @media screen and (max-width: 425px) {
   .carta-nosotros {
     height: 350px !important;
     width: 275px !important;
+  }
+  .img-nosotros {
+    height: 300px;
+  }
+  .img-nosotros-grande {
+    height: 350px;
   }
 }
 
