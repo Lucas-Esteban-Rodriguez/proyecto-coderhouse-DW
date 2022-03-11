@@ -164,6 +164,18 @@ header .header-logo:hover {
           transform: scale(100%);
 }
 
+header .ando, header .mate {
+  color: #ffff;
+  font-family: 'Baumans', cursive;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+header .mate {
+  margin-right: 25px;
+}
+
 header .header-buscador {
   margin-right: 150px;
 }
@@ -437,7 +449,7 @@ div .lista-categorias:hover {
   .card {
     width: 140px;
     height: 300px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   .card .carta-parrafo {
     margin-bottom: 0px;

@@ -8,6 +8,17 @@ header{
         transform: scale(100%);
         }
     }
+    .ando {
+        color: #ffff;
+        font-family: 'Baumans', cursive;
+        font-size: 2rem;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .mate {
+        @extend .ando;
+        margin-right: 25px;
+    }
     .header-buscador {
         margin-right: 150px;
     }
