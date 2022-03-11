@@ -48,7 +48,7 @@ body, html {
 .card {
   margin-top: 50px;
   width: 240px;
-  height: 420px;
+  height: 460px;
   background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
@@ -64,6 +64,8 @@ body, html {
 
 .card .carta-parrafo {
   font-weight: 900;
+  width: 230px;
+  height: 48px;
 }
 
 .card .precio {
@@ -199,6 +201,10 @@ nav {
 .contenedor-titulo .titulo {
   font-size: 2.5rem;
   font-weight: 900;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer div form button {
@@ -416,6 +422,12 @@ div .lista-categorias:hover {
   body, html {
     overflow-x: hidden;
   }
+  footer {
+    font-size: 0.8rem;
+  }
+  footer h5 {
+    font-size: 1rem;
+  }
   .boton-to-top {
     background-color: turquoise;
   }
@@ -425,10 +437,12 @@ div .lista-categorias:hover {
   .card {
     width: 140px;
     height: 300px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .card .carta-parrafo {
     margin-bottom: 0px;
+    width: 130px;
+    margin-left: 10px !important;
   }
   .card .precio {
     margin-bottom: 10px;
@@ -453,6 +467,13 @@ div .lista-categorias:hover {
     width: 200px;
     height: 420px;
   }
+  .card img {
+    height: 48%;
+  }
+  .card .carta-parrafo {
+    width: 180px;
+    margin-left: 15px !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -475,6 +496,9 @@ div .lista-categorias:hover {
   }
   .carta-nosotros h1 {
     font-size: 1.8rem;
+  }
+  .img-nosotros {
+    height: 350px;
   }
   .carta-nosotros-grande {
     width: 300px !important;

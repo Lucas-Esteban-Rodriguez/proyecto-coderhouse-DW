@@ -2,6 +2,12 @@
     body, html{
         overflow-x: hidden;
     }
+    footer {
+        font-size: 0.8rem;
+        h5 {
+            font-size: 1rem;
+        }
+    }
     .boton-to-top {
         background-color: turquoise;
     }
@@ -11,9 +17,11 @@
     .card {
         width: 140px;
         height: 300px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         .carta-parrafo {
             margin-bottom: 0px;
+            width: 130px;
+            margin-left: 10px!important;
         }
         .precio {
             margin-bottom: 10px;
@@ -36,5 +44,12 @@
     .card {
         width: 200px;
         height: 420px;
+        img {
+            height: 48%;
+        }
+        .carta-parrafo {
+            width: 180px;
+            margin-left: 15px!important
+        }
     }
 }
