@@ -273,7 +273,7 @@ footer div form button {
           align-items: center;
 }
 
-.contenedor-cartas-nosotros .carta-nosotros .carta-nosotros-contenedor .cartanosotros-contenedor-titulo {
+.contenedor-cartas-nosotros .carta-nosotros .carta-nosotros-contenedor .carta-nosotros-contenedor-titulo {
   border-bottom: solid 2px;
 }
 
@@ -300,6 +300,10 @@ footer div form button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contenedor-cartas-nosotros .carta-nosotros-grande .carta-nosotros-contenedor-titulo {
+  border-bottom: solid 2px;
 }
 
 .img-nosotros {
@@ -555,7 +559,11 @@ footer div form button {
     font-size: 1.6rem;
   }
   .img-nosotros {
+    width: 412px;
     height: 350px;
+  }
+  .img-nosotros-grande {
+    width: 412px;
   }
   .carta-nosotros-contenedor-parrafo {
     margin: 20px 20px;
@@ -565,14 +573,16 @@ footer div form button {
 
 /*------------------------------------------Pantallas Pequeños-------------------------------------------------*/
 @media screen and (max-width: 425px) {
-  .contenedor-carta-nosotros .carta-nosotros {
+  .contenedor-cartas-nosotros .carta-nosotros {
     height: 350px;
     width: 275px;
   }
   .img-nosotros {
+    width: 300px;
     height: 300px;
   }
   .img-nosotros-grande {
+    width: 350px;
     height: 350px;
   }
 }
