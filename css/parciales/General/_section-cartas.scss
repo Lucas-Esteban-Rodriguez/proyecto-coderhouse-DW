@@ -32,6 +32,12 @@
             &:hover {
                 transform: scale(110%);
             }
+            img {
+                background-color: #fff;
+                height: 53%;
+                object-fit: contain;
+                width: 100%;
+            }
             .carta-parrafo {
                 font-weight: 900;
                 width: 230px;
@@ -40,12 +46,6 @@
             .precio {
                 font-weight: 900;
                 border-bottom: solid 1px black;
-            }
-            img {
-                background-color: #fff;
-                height: 53%;
-                object-fit: contain;
-                width: 100%;
             }
             select {
                 cursor: pointer;

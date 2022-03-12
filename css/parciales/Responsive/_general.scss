@@ -26,24 +26,34 @@
             width: 90%;
         }
     }
-    .card {
-        width: 140px;
-        height: 300px;
-        font-size: 0.75rem;
-        .carta-parrafo {
-            margin-bottom: 0px;
-            width: 130px;
-            margin-left: 10px!important;
-        }
-        .precio {
-            margin-bottom: 10px;
-        }
-        div button{
-            font-size: 0.8rem;
-            padding: 4px 0px;
-            transform: scaleX(90%);
-            &:hover {
-                transform: scaleX(90%);
+    .section-cartas {
+        .Contenedor-de-cartas {
+            .card {
+                width: 140px;
+                height: 300px;
+                font-size: 0.75rem;
+                img {
+                    background-color: #fff;
+                    height: 53%;
+                    object-fit: contain;
+                    width: 100%;
+                }
+                .carta-parrafo {
+                    margin-bottom: 0px;
+                    width: 130px;
+                    margin-left: 10px;
+                }
+                .precio {
+                    margin-bottom: 10px;
+                }
+                div button{
+                    font-size: 0.8rem!important;
+                    padding: 4px 0px!important;
+                    transform: scaleX(90%)!important;
+                    &:hover {
+                        transform: scaleX(90%)!important;
+                    }
+                }
             }
         }
     }
@@ -58,7 +68,7 @@
         }
         .carta-parrafo {
             width: 180px!important;
-            margin-left: 15px!important
+            margin-left: 15px!important;
         }
     }
     .header-buscador {
