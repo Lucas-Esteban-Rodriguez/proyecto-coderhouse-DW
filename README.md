@@ -1,35 +1,16 @@
 # proyecto-coderhouse-DW
-Mi proyecto de Coderhouse Desarrollo Web
-----------------------------Cambios para la tarea de SASS II + SEO----------------------
-Titulos:
--index: Mateando | Inicio
--Categorias: Mateando | Categorias
--Nosotros: Mateando | Nosotros
--Contacto: Mateando | Contacto
--Carrito: Mateando | Carrito
+Mi proyecto de CoderHouse en el Curso de Desarrollo Web.
 
-Descripción:
--Index: Todos los productos relacionados a las yerbas y al mate!
--Categorias: Yerbas, Mates, Endulzantes, bombillas, y mas productos!
--Nosotros: Un poco sobre la privacidad, condiciones, etc.
--Contacto: Tuviste una mala experiencia o algo que quieras hacernos saber? contactanos!
--Carrito: Productos agregados al carrito!
+Este proyecto trata sobre un pequeño E-commerce simulando ser una pyme orientado a objetos relacionados con el Mate, como la yerba, los mastes, los termos, etc.
+Con un estilo amigable, bonito e intuitivo.
+Posee las secciones de Inicio, Categorias, Nosotros, Contacto y Carrito.
 
-Keywords:
--Index: Mateando, Mate, Mates, Bombillas, Endulzantes, Termo, Termos, Equipos de mate, Yerba, Yerbas
--Categorias: Mateando categorias
--Nosotros: Mateando nosotros, mateando privacidad, mateando terminos y condiciones
--Contacto: Mateando contacto
--Carrito: Mis productos, Mateando carrito 
+-Un inicio sencillo donde se presenta un Carrusel sobre los productos que puedes encontrar en la página, las redes sociales y demás información.
+-En la sección categorias se podrán encontrar todos los productos de la página, con botones que te guiarán hacia el producto que estas buscando, y un boton que te redirije hacia arriba del todo de la página y lograr encontrar otros productos, cosas hechas pensando en la comodidad del usuaario.
+-En la sección Nosotros se encontrara información de la empresa como su Misión y Visión y algunas imagenes sobre información del Mate.
+-Sección Contacto dónde se podría contactar con la empresa por cualquier motivo.
+-Sección carrito donde se encontrarian sus productos guardados.
 
-Encabezados:
--No encuentro donde colocar encabezados en mis secciones.
+ --Siempre pensando en el usuario, su comodidad, navegación intuitiva, bonita y amigable.
 
-Mapa SASS: 
--Realice un mapa en css/Parciales/General/_variables.scss, sobre elementos de flexbox y los aplique en css/Parciales/Contacto/_section-formulario.scss 
-
-@MIXIN:
--Realice el mixin en css/Parciales/General/_variables.scss, sobre paddings, los aplqieue en css/Parciales/Categorias/_lista-categorias.scss
-
-@EXTEND:
--No encontre utilidad para poder aplicarlo en mi proyecto, pero para demostrar que puedo manejar esta herramienta hice un ejemplo en css/Parciales/Ejemplo/_extend.scss, donde brinde un ejemplo de un uso comun de flexbox, pero agregandole un atributo extra.
+Soy Lucas Rodriguez y este es mi proyecto de Desarrollo Web, proximamente realizando el curso de Javascript y con ambición de concretar varios cursos más, e insertarme de lleno con toda mi pasión en el rubro de la programación, proyecto hecho con toda mi dedicación y esfuerzo.
