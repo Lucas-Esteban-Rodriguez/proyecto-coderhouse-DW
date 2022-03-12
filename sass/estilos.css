@@ -540,22 +540,22 @@ footer div form button {
 
 /*----------------------------------------------------Nosotros Responsive------------------------------*/
 @media screen and (max-width: 1024px) {
-  .carta-nosotros {
-    height: 350px !important;
-    width: 300px !important;
+  .contenedor-cartas-nosotros .carta-nosotros {
+    height: 350px;
+    width: 300px;
   }
-  .carta-nosotros h1 {
+  .contenedor-cartas-nosotros .carta-nosotros h1 {
     font-size: 1.8rem;
   }
-  .img-nosotros {
-    height: 350px;
-  }
-  .carta-nosotros-grande {
+  .contenedor-cartas-nosotros .carta-nosotros-grande {
     width: 300px !important;
     height: 400px !important;
   }
-  .carta-nosotros-grande h1 {
+  .contenedor-cartas-nosotros .carta-nosotros-grande h1 {
     font-size: 1.6rem;
+  }
+  .img-nosotros {
+    height: 350px;
   }
   .carta-nosotros-contenedor-parrafo {
     margin: 20px 20px;
@@ -565,9 +565,9 @@ footer div form button {
 
 /*------------------------------------------Pantallas Pequeños-------------------------------------------------*/
 @media screen and (max-width: 425px) {
-  .carta-nosotros {
-    height: 350px !important;
-    width: 275px !important;
+  .contenedor-carta-nosotros .carta-nosotros {
+    height: 350px;
+    width: 275px;
   }
   .img-nosotros {
     height: 300px;
