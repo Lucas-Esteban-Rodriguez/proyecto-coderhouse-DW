@@ -354,6 +354,7 @@ footer div form button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  border-radius: 30px;
 }
 
 .section-formulario .section-formulario-carta .section-formulario-carta-contenedor {
@@ -373,6 +374,13 @@ footer div form button {
           align-items: center;
   width: 700px;
   height: 480px;
+  color: black;
+  border-radius: 40px;
+}
+
+.section-formulario .section-formulario-carta .section-formulario-carta-contenedor input, .section-formulario .section-formulario-carta .section-formulario-carta-contenedor select {
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .section-formulario .section-formulario-carta .section-formulario-carta-contenedor :focus {

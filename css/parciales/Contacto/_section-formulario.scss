@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    border-radius: 30px;
         .section-formulario-carta-contenedor {
          background-color: #06d6a0;
          display: flex;
@@ -24,6 +25,15 @@
          align-items: center;
          width: 700px;
          height: 480px;
+         color: black;
+         border-radius: 40px;
+         input {
+             border-radius: 5px;
+             border: 1px solid black;
+         }
+         select {
+             @extend input;
+         }
          :focus {
              outline: 3px solid #4361ee;
              border: lightblue;
