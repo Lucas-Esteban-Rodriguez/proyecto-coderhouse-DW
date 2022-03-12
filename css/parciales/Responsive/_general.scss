@@ -1,3 +1,5 @@
+/*-------------------------------------------------------General Responsive-------------------------------*/
+
 @media screen and (max-width: 1023px) {
     body, html{
         overflow-x: hidden;
@@ -49,13 +51,13 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
     .card {
-        width: 200px;
-        height: 420px;
+        width: 200px!important;
+        height: 420px!important;
         img {
-            height: 48%;
+            height: 48%!important;
         }
         .carta-parrafo {
-            width: 180px;
+            width: 180px!important;
             margin-left: 15px!important
         }
     }

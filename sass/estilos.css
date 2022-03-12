@@ -118,13 +118,13 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin: 0px !important;
+  margin: 0px;
 }
 
 .section-cartas .Contenedor-de-cartas {
   width: 100%;
-  margin: 0px !important;
-  padding: 0px !important;
+  margin: 0px;
+  padding: 0px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -442,6 +442,7 @@ footer div form button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*-------------------------------------------------------General Responsive-------------------------------*/
 @media screen and (max-width: 1023px) {
   body, html {
     overflow-x: hidden;
@@ -495,14 +496,14 @@ footer div form button {
 
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
   .card {
-    width: 200px;
-    height: 420px;
+    width: 200px !important;
+    height: 420px !important;
   }
   .card img {
-    height: 48%;
+    height: 48% !important;
   }
   .card .carta-parrafo {
-    width: 180px;
+    width: 180px !important;
     margin-left: 15px !important;
   }
   .header-buscador {
@@ -520,6 +521,7 @@ footer div form button {
   }
 }
 
+/*----------------------------------------------Index Responsive-----------------------------------*/
 @media screen and (max-width: 1024px) {
   .CarruselDescuentos {
     height: 200px;
@@ -529,6 +531,7 @@ footer div form button {
   }
 }
 
+/*----------------------------------------------------Nosotros Responsive------------------------------*/
 @media screen and (max-width: 1024px) {
   .carta-nosotros {
     height: 350px !important;
@@ -567,6 +570,7 @@ footer div form button {
   }
 }
 
+/* -----------------------------------------------------Contacto Responsive-------------------------------*/
 @media screen and (max-width: 1024px) {
   .section-formulario {
     height: 700px;
@@ -602,6 +606,7 @@ footer div form button {
   }
 }
 
+/*---------------------------------------------Carrito Responsive----------------------------------------*/
 @media screen and (max-width: 1024px) {
   .h1-carrito {
     font-size: 1.5rem;
