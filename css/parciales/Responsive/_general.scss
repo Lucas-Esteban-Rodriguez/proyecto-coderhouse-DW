@@ -2,22 +2,27 @@
     body, html{
         overflow-x: hidden;
     }
+    .boton-to-top {
+        padding: 0px;
+        &:hover {
+            background-color: turquoise;
+        }
+    }
     .header-buscador {
         margin-left: 160px!important;
         width: 55%!important;
+    }
+    .titulo {
+        font-size: 1.5rem!important;
     }
     footer {
         font-size: 0.8rem;
         h5 {
             font-size: 1rem;
         }
-    }
-    .boton-to-top {
-        background-color: turquoise;
-        padding: 0px;
-    }
-    .titulo {
-        font-size: 1.5rem!important;
+        .newsletter-responsive {
+            width: 90%;
+        }
     }
     .card {
         width: 140px;
@@ -39,9 +44,6 @@
                 transform: scaleX(90%);
             }
         }
-    }
-    .newsletter-responsive {
-        width: 90%;
     }
 }
 

@@ -9,28 +9,8 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
-nav div div ul li {
+.width-50 {
   width: 50%;
-}
-
-.section-cartas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  margin: 0px !important;
-}
-
-.section-cartas .Contenedor-de-cartas {
-  width: 100%;
-  margin: 0px !important;
-  padding: 0px !important;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .boton-to-top {
@@ -39,116 +19,26 @@ nav div div ul li {
   right: 30px;
   z-index: 99;
   border: solid 0.5px black;
-  background-color: violet;
+  background-color: turquoise;
   cursor: pointer;
   padding: 10px;
   border-radius: 50px;
 }
 
 .boton-to-top:hover {
-  background-color: turquoise;
+  background-color: violet;
 }
 
-.card {
-  margin-top: 50px;
-  width: 240px;
-  height: 460px;
-  background: #ececec;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
-          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  padding: 0px;
-}
-
-.card:hover {
-  -webkit-transform: scale(110%);
-          transform: scale(110%);
-}
-
-.card .carta-parrafo {
-  font-weight: 900;
-  width: 230px;
-  height: 48px;
-}
-
-.card .precio {
-  font-weight: 900;
-  border-bottom: solid 1px black;
-}
-
-.card img {
-  background-color: #fff;
-  height: 53%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
-}
-
-.card select {
-  cursor: pointer;
-  border-radius: 50px;
-  border: 2px solid #3a86ff;
-  background-color: transparent;
-  color: #3a86ff;
-}
-
-.boton-Comprar {
-  color: #ffff;
-  padding: 5px;
-  border: transparent;
-  background-color: #5390d9;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.boton-Comprar:hover {
-  -webkit-transform: scale(110%);
-          transform: scale(110%);
-}
-
-.boton-EnviarAlCarrito {
-  color: #ffff;
-  padding: 5px;
-  border: transparent;
-  background-color: #06d6a0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.boton-EnviarAlCarrito:hover {
-  -webkit-transform: scale(110%);
-          transform: scale(110%);
-}
-
-.contenedor-titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: linear-gradient(217deg, rgba(46, 196, 182, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-}
-
-.contenedor-titulo .titulo {
-  margin: 5px 0px;
+nav div div ul li {
+  width: 50%;
 }
 
 .boton-activo {
   border-bottom: solid 2px gold;
 }
 
-.width-50 {
-  width: 50%;
-}
-
 .nav-boton:hover {
   border-bottom: solid 1px white;
-}
-
-.footer-boton:hover {
-  border-bottom: solid 1px black;
 }
 
 header {
@@ -217,6 +107,99 @@ nav {
 .contenedor-titulo .titulo {
   font-size: 2.5rem;
   font-weight: 900;
+  margin: 5px 0px;
+}
+
+.section-cartas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0px !important;
+}
+
+.section-cartas .Contenedor-de-cartas {
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-cartas .Contenedor-de-cartas .card {
+  margin-top: 50px;
+  width: 240px;
+  height: 460px;
+  background: #ececec;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 0px;
+}
+
+.section-cartas .Contenedor-de-cartas .card:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.section-cartas .Contenedor-de-cartas .card .carta-parrafo {
+  font-weight: 900;
+  width: 230px;
+  height: 48px;
+}
+
+.section-cartas .Contenedor-de-cartas .card .precio {
+  font-weight: 900;
+  border-bottom: solid 1px black;
+}
+
+.section-cartas .Contenedor-de-cartas .card img {
+  background-color: #fff;
+  height: 53%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.section-cartas .Contenedor-de-cartas .card select {
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid #3a86ff;
+  background-color: transparent;
+  color: #3a86ff;
+}
+
+.section-cartas .Contenedor-de-cartas .card .boton-Comprar {
+  color: #ffff;
+  padding: 5px;
+  border: transparent;
+  background-color: #5390d9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-cartas .Contenedor-de-cartas .card .boton-Comprar:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.section-cartas .Contenedor-de-cartas .card .boton-EnviarAlCarrito {
+  color: #ffff;
+  padding: 5px;
+  border: transparent;
+  background-color: #06d6a0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-cartas .Contenedor-de-cartas .card .boton-EnviarAlCarrito:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 footer {
@@ -226,6 +209,10 @@ footer {
 footer div form button {
   background-color: #52b788 !important;
   border: 0.5px solid #52b788 !important;
+}
+
+.footer-boton:hover {
+  border-bottom: solid 1px black;
 }
 
 .CarruselDescuentos {
@@ -240,13 +227,13 @@ footer div form button {
   background-color: #dddd;
 }
 
-div .lista-categorias {
+.lista-categorias {
   border: none;
   border-radius: 0px;
   background: linear-gradient(217deg, rgba(46, 196, 182, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(224, 170, 255, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
-div .lista-categorias:hover {
+.lista-categorias:hover {
   background: linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), linear-gradient(217deg, rgba(46, 196, 182, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(225, 50, 255, 0.8), rgba(0, 255, 0, 0) 70.71%);
 }
 
@@ -286,6 +273,10 @@ div .lista-categorias:hover {
           align-items: center;
 }
 
+.contenedor-cartas-nosotros .carta-nosotros .carta-nosotros-contenedor .cartanosotros-contenedor-titulo {
+  border-bottom: solid 2px;
+}
+
 .contenedor-cartas-nosotros .carta-nosotros-grande {
   cursor: default;
   overflow: auto;
@@ -311,14 +302,6 @@ div .lista-categorias:hover {
           align-items: center;
 }
 
-.carta-nosotros-contenedor-parrafo {
-  margin: 20px 50px;
-}
-
-.cartanosotros-contenedor-titulo {
-  border-bottom: solid 2px;
-}
-
 .img-nosotros {
   height: 450px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
@@ -329,6 +312,10 @@ div .lista-categorias:hover {
   height: 400px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+}
+
+.carta-nosotros-contenedor-parrafo {
+  margin: 20px 50px;
 }
 
 .section-formulario {
@@ -443,13 +430,26 @@ div .lista-categorias:hover {
   height: 600px;
 }
 
+.section-carrito a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 1023px) {
   body, html {
     overflow-x: hidden;
   }
+  .boton-to-top {
+    padding: 0px;
+  }
+  .boton-to-top:hover {
+    background-color: turquoise;
+  }
   .header-buscador {
     margin-left: 160px !important;
     width: 55% !important;
+  }
+  .titulo {
+    font-size: 1.5rem !important;
   }
   footer {
     font-size: 0.8rem;
@@ -457,12 +457,8 @@ div .lista-categorias:hover {
   footer h5 {
     font-size: 1rem;
   }
-  .boton-to-top {
-    background-color: turquoise;
-    padding: 0px;
-  }
-  .titulo {
-    font-size: 1.5rem !important;
+  footer .newsletter-responsive {
+    width: 90%;
   }
   .card {
     width: 140px;
@@ -486,9 +482,6 @@ div .lista-categorias:hover {
   .card div button:hover {
     -webkit-transform: scaleX(90%);
             transform: scaleX(90%);
-  }
-  .newsletter-responsive {
-    width: 90%;
   }
 }
 
@@ -520,10 +513,6 @@ div .lista-categorias:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .header-buscador {
-    margin-left: 150px;
-    width: 200px;
-  }
   .CarruselDescuentos {
     height: 200px;
   }

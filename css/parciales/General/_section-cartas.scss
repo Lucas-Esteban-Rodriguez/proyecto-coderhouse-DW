@@ -8,5 +8,72 @@
     .titulo {
         font-size: 2.5rem;
         font-weight: 900;
+        margin: 5px 0px;
     }
 }  
+.section-cartas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px!important;
+    .Contenedor-de-cartas {
+        width: 100%;
+        margin: 0px!important;
+        padding: 0px!important;
+        justify-content: space-evenly;
+        .card {
+            margin-top: 50px;
+            width: 240px;
+            height: 460px;
+            background: rgb(236, 236, 236);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 8.82px 16.38px -3.78px, rgba(0, 0, 0, 0.2) 0px -3.78px 0px inset;
+            transition: 0.4s;
+            padding: 0px;
+            &:hover {
+                transform: scale(110%);
+            }
+            .carta-parrafo {
+                font-weight: 900;
+                width: 230px;
+                height: 48px;
+            }
+            .precio {
+                font-weight: 900;
+                border-bottom: solid 1px black;
+            }
+            img {
+                background-color: #fff;
+                height: 53%;
+                object-fit: contain;
+                width: 100%;
+            }
+            select {
+                cursor: pointer;
+                border-radius: 50px;
+                border: 2px solid #3a86ff;
+                background-color: transparent;
+                color: #3a86ff;
+            }
+            .boton-Comprar {
+                color: #ffff;
+                padding: 5px;
+                border: transparent;
+                background-color: #5390d9;
+                transition: 0.4s;
+                &:hover {
+                    transform: scale(110%);
+                }
+            }
+            .boton-EnviarAlCarrito {
+                color: #ffff;
+                padding: 5px;
+                border: transparent;
+                background-color: #06d6a0;
+                transition: 0.4s;
+                &:hover {
+                    transform: scale(110%);
+                }
+            }
+        }
+    }
+}
